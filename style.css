@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Área dos produtos */
+#produtos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Card de produto */
+#produtos div {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagem */
+#produtos img {
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Botões */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Carrinho */
+#carrinho {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Item do carrinho */
+#carrinho div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Imagem menor no carrinho */
+#carrinho img {
+  border-radius: 6px;
+}
+
+/* Botão remover */
+#carrinho button {
+  background-color: #e74c3c;
+}
+
+#carrinho button:hover {
+  background-color: #c0392b;
+}
+
+/* Total */
+#total {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
