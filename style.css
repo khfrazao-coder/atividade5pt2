@@ -10,10 +10,21 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   padding: 20px;
+
+  /* Mantém o footer no final */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Conteúdo principal ocupa o espaço */
+main {
+  flex: 1;
 }
 
 /* Títulos */
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   margin-bottom: 15px;
 }
@@ -34,13 +45,14 @@ h1, h2 {
   border-radius: 10px;
   width: 180px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Imagem */
 #produtos img {
   margin-bottom: 10px;
   border-radius: 8px;
+  max-width: 100%;
 }
 
 /* Botões */
@@ -70,16 +82,22 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+
   background: white;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Imagem menor no carrinho */
 #carrinho img {
   border-radius: 6px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 /* Botão remover */
@@ -97,4 +115,16 @@ button:hover {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+
+  background-color: #222;
+  color: white;
+
+  border-radius: 10px;
 }
